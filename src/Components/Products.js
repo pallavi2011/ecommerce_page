@@ -48,7 +48,7 @@ const Products = ({color, price, category}) => {
           {product.map((prod)=>{            
             return (<>
             <div key={prod.id} class="card text-center m-2" style={{"width": "12rem"}}>
-            <img src={prod.image} class="card-img-top" alt="..."/>
+            <img src={process.env.PUBLIC_URL + prod.image} class="card-img-top" alt="..."/>
             <div class="card-body">
               <h5 class="card-title">{prod.title}</h5>
               <p class="card-text">Rs. {prod.price}</p>
